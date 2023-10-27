@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "SaatvaAssistant",
+  "version": "1.0",
+  "description": "AI Chatbot",
+  "action": {
+    "default_title": "Click to open panel",
+    "default_icon": {
+      "16": "vite.svg",
+      "48": "vite.svg",
+      "128": "vite.svg"
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["sidePanel", "declarativeNetRequest", "tabs", "notifications","activeTab", "scripting"],
+  "icons": {
+    "16": "vite.svg",
+    "48": "vite.svg",
+    "128": "vite.svg"
+  }
+}
